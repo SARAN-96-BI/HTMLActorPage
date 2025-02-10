@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+</head>
+<body>
+    <h1>WELCOME TO SIGNUP PAGE</h1>
+    <form>
+        <input type="text" placeholder="USERNAME" required id="user">
+        <input type="text" placeholder="USER EMAIL" required id="umail">
+        <button type="submit">SIGNUP</button>
+    </form>
+
+    <script>
+        let form = document.forms[0]
+        console.log(form);
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            let uname = document.getElementById('user').value;
+            let usermail = document.getElementById('umail').value;
+            // console.log('uname','usermail');
+            // to store data in local storage
+            localStorage.setItem('user',uname)
+            localStorage.setItem('email',usermail)
+            alert('Registration Successful....!')
+            open('./Login.html')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+#grid{
+    background-color: aqua;
+    height: 1000px;
+    /* grid container properties */
+    display: grid;
+    /* grid-template-columns : represents the no.of columns and width of each column */
+    /* we can use this type---grid-template-columns: auto auto auto;  OR BELOW*/
+    grid-template-columns: repeat(3,auto);
+    /* grid-templay=te-rows : height of each row */
+    /* syntax same as column */
+    grid-template-rows: repeat(3,auto);
+    /* row-gap: 5px;
+    column-gap: 5px; */
+    gap: 5px;
+}
+
+#grid .grid-items{
+    background-color: purple;
+    color: white;
+}
+/* grid-items properties .......*/
+/* Grid-Column-Start---from where column needs to start */
+/* G-C-End---------- where column needs to end/ */
+/* G-Row-S--------- from where row need to start */
+/* G-R-E --------- where row need to end */
+
+.grid-item1{
+    /* grid-column:start/end (1/3) */
+    /* grid-column: 1/3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid area is combination iof all above grid comands */
+    grid-area: 1/1/3/3;
+}
+
+.grid-item2{
+    /* g-r : start/end (1/3) */
+    grid-row: 1/3;
+}
+
+.grid-item4{
+    grid-column: 2/4;
+}

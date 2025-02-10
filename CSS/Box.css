@@ -1,0 +1,30 @@
+*{
+    /* box sizing....?????? */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+h1{
+    /*Go live - chrome - right click - inspect - we get developer tool - target h1 in that then see */
+    
+    /* thickness, without style border wont work */
+    /* style = solid, dashed, dotted, double - are border style */
+    border-top: 5px double red;
+    border-right: 8px dotted blue;
+    border-left: 6px dashed green;
+    border-bottom: 5px solid yellow;
+    height: 200px;
+    width: 600px;
+    
+    /* padding- top, right, bottom, left */
+    /* OR we can write padding-right...... */
+    padding: 50px 20px 30px 40px;
+
+    /* margin- top, right, bottom, left */
+    /* OR we can write margin-right...... */
+    margin: 100px 80px 90px 120px;
+}
+
+

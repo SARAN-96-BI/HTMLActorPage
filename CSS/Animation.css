@@ -1,0 +1,71 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: square;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+section{
+    height: 200px;
+    width: 200px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* these below cmd must for keyframe to function */
+    /* animation-name is given what name given by us in 32nd line */
+    animation-name: round;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+section i{
+    color: white;
+    font-size: 50px;
+}
+
+/* @keyframe (name) (name can be any as per our wish)----- must for animation */
+@keyframes round{
+    from{
+        transform: rotate(0deg) scale(1);
+        background-color: blue;
+    }
+
+    to{
+        transform: rotate(360deg) scale(2);
+        background-color: deeppink;
+    }
+}
+
+/* 2nd way of creating animation */
+/* to make it work------ we need to pass animation name and animation duartion both MUST in BODY of CSS to creating animation */
+@keyframes square {
+    0%{
+        background-color: white;
+    }
+
+    25%{
+        background-color: deeppink;
+    }
+
+    55%{
+        background-color: darkblue;
+    }
+
+    80%{
+        background-color: darkorange;
+    }
+
+    100%{
+        background-color: darkmagenta;
+    }
+
+    
+}

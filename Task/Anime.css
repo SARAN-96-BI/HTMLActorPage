@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border-top: 10px solid chartreuse;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+i{
+    font-size: 30px;
+    color: grey;
+    animation-name: setting;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    10%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes setting{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    10%{
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outerbox{
+    height: 400px;
+    width: 400px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom,blue,rgb(196, 13, 141),crimson,orange);
+}
+
+#outerbox .innerbox{
+    border: 30px solid white;
+    height:320px;
+    width: 320px;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#outerbox .innerbox .bigcir{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border:30px solid white;
+}
+
+#outerbox .innerbox .smallcir{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top:35px;
+    left: 200px;
+}

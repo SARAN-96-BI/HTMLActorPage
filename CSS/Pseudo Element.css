@@ -1,0 +1,39 @@
+/* first letter */
+#para::first-letter{
+    font-size: 100px;
+    color: blue;
+}
+
+/* first-line */
+#para::first-line{
+    background-color: aqua;
+}
+
+
+/* before - add the content before the actual content */
+/* within content we must give in string('') */
+#para::before{
+    content: 'hello....😎';
+}
+
+/* after - add content after the actual content */
+#para::after{
+    content: 'bye....👍';
+}
+
+/* marker - to style the list style or bullet or number marker orderer */
+/* can use both ordered and unordered list */
+ul li::marker{
+    color: brown;
+}
+
+/* selection - style the selector option ... like a blue color block to show what we have selected */
+/* by using ( user-select ) we can make the user not able to choose a content */
+/* here for example we applied it here on para(gold) alone not in ul(blue> ..so to see the difference */
+#para::selection{
+    background-color: gold;
+}
+
+ol li::selection{
+    user-select:none;
+}

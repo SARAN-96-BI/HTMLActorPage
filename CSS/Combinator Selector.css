@@ -1,0 +1,23 @@
+/* Descendent Selector : both direct and indirect children */
+/* syntax - parent : space : children */
+#imgsnack img{
+    height: 100px;
+    width: 100px;
+    border: 10px solid red;
+}
+
+/* child selector : only direct children */
+/* syntax -- parent : > : children*/
+#imgsnack>img{
+    border: 20px solid blue;
+}
+
+/* Adjacent sibling selactor ( + ) */
+#shopping+.btn{
+    background-color: red;
+}
+
+/* General sibling */
+#shopping~.btn{
+    border: 10px solid blue;
+}

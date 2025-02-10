@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            height: 300px;
+            border: 2px solid red;
+            width: 250px;
+            display: inline-block;
+            text-align: justify;
+        }
+
+        /* overflow has 4 options */
+        /* overflow controls the styling of a content too big to fit in */
+        /* overflow only work on block elements */
+
+        .box1{
+            overflow: visible;
+            /* overflow not clipped */
+        }
+
+        .box2{
+            overflow: hidden;
+            /* overflow clipped out , rest is invisible */
+        }
+
+        .box3{
+            overflow: scroll;
+            /* overflow clipped out... scroll bar added */
+        }
+
+        .box4{
+            overflow: auto;
+            /* overflow clipped out... scroll bar added when necessary */
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim omnis similique qui dolore quibusdam quas, nihil fuga saepe consequuntur laudantium id obcaecati. Architecto consectetur mollitia unde veritatis nesciunt? Porro numquam quibusdam, at obcaecati similique quae libero expedita atque harum quas omnis! Nesciunt vel magni aperiam deleniti tempora iure, blanditiis neque aspernatur nemo quisquam autem. Numquam molestias vitae porro ducimus recusandae, eum iusto? Voluptas aspernatur sint accusantium iusto sapiente incidunt, cum quae vero. Voluptas ea beatae minima exercitationem fuga qui blanditiis consectetur tenetur explicabo consequuntur voluptatibus ex expedita ipsa, laudantium, rerum quibusdam veritatis perspiciatis corporis! Quos, cupiditate. Nobis, animi enim?</section>
+    <section class="box box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum molestiae totam est maxime facilis facere minus cupiditate reprehenderit itaque consequuntur, reiciendis sed assumenda nam unde cumque laborum quod! Alias voluptas debitis sunt dignissimos quos nostrum aspernatur autem earum ipsam dicta labore aperiam esse itaque laboriosam beatae ad, tempore harum? Voluptatibus, fuga ipsam repudiandae, voluptates perferendis dolorum officiis fugit mollitia perspiciatis ut deserunt aliquid officia iure accusamus. Ab praesentium, exercitationem, qui assumenda perferendis nostrum et molestiae iusto iure eum vel iste voluptatibus ipsam illo laudantium ea reprehenderit possimus est, ex corrupti! Voluptate, quisquam rerum! Consequatur numquam necessitatibus corporis consectetur tenetur sit!</section>
+    <section class="box box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, pariatur ducimus quaerat exercitationem esse harum beatae provident ipsam atque quisquam totam! Aspernatur quasi hic molestiae veritatis veniam. Officiis iusto quis placeat fugiat nostrum debitis, provident architecto, exercitationem libero aliquam minus consequatur quas voluptates adipisci! Fuga voluptate dolore laborum a illum? Quos, totam quibusdam inventore ipsa incidunt culpa distinctio in ea ipsam officia consequuntur blanditiis temporibus aperiam labore, recusandae expedita enim atque necessitatibus ex, ratione vero suscipit? Quo perspiciatis repellendus placeat minus in, ipsum tenetur ut culpa sed quia sequi veniam repudiandae unde omnis quibusdam expedita nesciunt iste! Provident, delectus adipisci.</section>
+    <section class="box box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam temporibus necessitatibus sit quasi magnam officia magni, minima ipsa inventore perferendis ut iure hic itaque ullam delectus exercitationem pariatur doloremque quo aliquam fugit consequuntur molestias provident? Itaque molestiae adipisci magnam ullam quos porro dolorum, delectus nobis esse eos iste? Quaerat, obcaecati? Odio eaque nostrum libero, sunt rerum voluptas vel fugiat esse minima cumque doloribus, vitae architecto provident nisi blanditiis fuga non iste cupiditate. Consectetur placeat temporibus sit eaque asperiores quasi cum voluptate corrupti dolorum accusamus deserunt voluptatibus ullam esse, consequuntur dolores doloribus perspiciatis possimus ad! Quam at velit totam et!</section>
+</body>
+</html>

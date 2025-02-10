@@ -1,0 +1,51 @@
+body{
+    /* align items work onlyafter giving height and width */
+    /* in height-- value given in (vh instead px) */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /* without using below 3 function we can straightly use the 17th point comand which include all */
+    /* for transition to work--
+    -----------we need to pass hover comand in 24 to 27th line */
+    /* transition-duration: 4s;
+    transition-delay: 1s;
+    transition-timing-function: ease; */
+    /*  here 2s is duration and linear 1s is delay to transition */
+    transition: background-color 2s linear 1s, height 2s linear,width 2s linear;
+    transition: transform 2s;
+}
+
+div:hover{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+
+    /* translate-- moves the element */
+    transform: translateX(200px);
+    transform: translateY(300px);
+    transform: translate(200px,200px);
+
+    /* scale(times to change)-- changes size of the element */
+    transform: scaleX(2);
+    transform: scaleY(3);
+    transform: scale(3);
+
+    /* skew()-- bend the element */
+    transform: skewX(30deg);
+    transform: skewY(60deg);
+    transform: skew(30deg,30deg);
+
+    /* rotate( -ve means anti-clockwise)---- rotate the element */
+    /* we can pass more command in same line like below */
+    transform: rotate(-350deg) scale(2);
+
+    
+}

@@ -1,0 +1,32 @@
+/* universal selectors( * ) - */
+/* margin, padding, box-sizing are must in universal selector */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* id selector(#) followed by value passed */
+#Heading{
+    color: blueviolet;
+}
+
+/* class selector ( . ) */
+.para{
+    background-color: rgb(83, 14, 212);
+}
+
+.demo{
+    color: rgb(10, 226, 241);
+}
+
+/* tag name or element selector ( tag name ) */
+button{
+    background-color: rgb(171, 231, 5);
+}
+
+/* grouping selector ( , ) */
+#Heading, .para, button{
+    color: rgb(221, 9, 203);
+}

@@ -1,0 +1,41 @@
+#flex_container{
+    /* flex containers props are display,flex direction, */
+    /* flex-direction has multiple options some are... row,column,row-reverse,column-reverse */
+    /* the below 2(justify and align) will work only with display-flex and height and width */
+    /* 100% means it takes 100% width of parent */
+    /* justify(for hrzntly direction) has space-evenly, flex-start, flex-end, space-around, space-between, flex-centre( only with hrntl direction) */
+    /* flex-start, flex-end, centre */
+    /* align-items for vertical direction */
+    background-color: lightpink;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+#flex_container .flex_items{
+    /* flex : to give uniform width to all elements  */
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    /* flex: 1; */
+}
+
+#flex_container .flex1{
+    /* to enlarge space occupied : flex-grow */
+    /* value gives ratio of space shared with others */
+    flex-grow: 1;
+}
+
+#flex_container .flex2{
+    flex-grow: 2;
+}
+
+#flex_container .flex3{
+    /*flex-basis : adjust width wrt parents */
+    flex-basis: 40%;
+}
+

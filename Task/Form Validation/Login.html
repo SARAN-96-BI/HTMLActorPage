@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME TO SIGNUP PAGE</h1>
+    <form>
+        <input type="text" placeholder="USERNAME" required id="user">
+        <input type="text" placeholder="USER EMAIL" required id="umail">
+        <button type="submit">SIGNUP</button>
+    </form>
+
+    <script>
+        let form = document.forms[0]
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            let uname = document.getElementById('user').value;
+            let usermail = document.getElementById('umail').value;
+            //access local storage by
+            let lname = localStorage.getItem('user');
+            let lmail = localStorage.getItem('email');
+            console.log(`user data ${uname}, ${usermail}`);
+            console.log(`local storage data ${lname}, ${lmail}`);
+            if(uname !== lname){
+                alert("User not found")
+            }
+            else if (usermail !== lmail){
+                alert("Mail-id not found")
+            }
+            else{
+                alert('LOGIN SUCCESSFUL....!')
+                open("./Home.html")
+            }
+               })
+        </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+    <style>
+        button{
+            height:100px ; width: 200px; background-color: rgb(63, 182, 47);
+        }
+
+        h2{
+            background-color: blueviolet;
+        }
+ 
+    </style>
+
+    <link rel="stylesheet" href="./Style.css">
+
+</head>
+<body>
+    
+    <!-- Inline CSS - we use style attribute and do styling-->
+     <h1 style="background-color: blueviolet;">Good Evening....</h1>
+
+     <!-- Internal CSS -CHECK 7TH LINE IN HEAD--- we do styling in HEAD section -->
+      <button>click</button>
+
+      <!-- External CSS - check 13TH LINE.. it is done to connect this para to the link   -->
+      <!-- create a seperate css file with #name.css and conect it with 13th line via href -->
+      <p>hi hello good morning good nigth jio bsnl aircel docomo</p>
+
+      <!-- priority = 1st inline css if given here below...-->
+       <!--  2nd which tag lies LAST in HEAD section .. -->
+         <!-- here we have external css last in head section so here that will work 2nd INCASE INLINE code absent -->
+       <h2>1st priority to inline coding</h2>
+       
+
+
+
+</body>
+</html>

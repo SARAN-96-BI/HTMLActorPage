@@ -1,0 +1,63 @@
+body{
+    /* body -we use here to apply changes to ENTIRE WEBPAGE */
+    /* types of passing background color-1.direct, 2.hexadecimal(6 values) value comprise of(0-9)&(a-f), 3.rgb */
+    background-color: red; 
+    background-color: #6de07b;
+
+    /* rgb - red green blue( 0 0 0 ) (value range btwn 0-255 )*/
+    background-color:rgb(154, 220, 231);
+
+        /* a - alpha value */
+    /* alpha value : range from (0-1)--- here 0 high transparent & 1 min transparent */
+    background-color: rgba(114,12,12,0.3);
+    /* here last colorworks as last code takes action */
+
+    /* color: #14cff0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSijP07TGc2PpM5U2fJeyKDgwqyliST9LYEjA&s);
+    background-repeat:no-repeat; */
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* background-image: linear-gradient(to right bottom, orange, blue, red, green); */
+    background-image: radial-gradient(ellipse, orange, blue, rgb(175, 184, 55), rgb(207, 34, 34));
+
+}
+
+
+#job{
+    color: brown;
+
+    text-align: center;
+
+    text-transform: capitalize;
+
+    /* text shallow - shadow or blurness along x & y axis */
+    /* xaxis yaxis blurness value */
+    text-shadow: 15px 10px 5px blueviolet;
+
+    /* text decoration - overline, underline , line-through, none(this removes the existing line in many cases like in anchoer tag<a>, etccccc */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: red ;
+    text-decoration-thickness: 2px ;
+}
+
+#intro{
+    /* otherwise we can pass in same line */
+    text-decoration: 2px underline solid green ;
+}
+
+
+/* justify - to align at straight line in both sides of parargraph  */
+/* font weight - just value - no unit */
+p{
+    text-align: justify;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-indent: 400px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

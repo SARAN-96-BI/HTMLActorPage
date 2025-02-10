@@ -1,0 +1,62 @@
+/* 1-Dynamic pseudo selector */
+/* for unvisited - link used */
+a:link{
+    color: orange;
+}
+
+/* for visited */
+a:visited{
+    color: rgb(255, 0, 170);
+}
+
+/* style for hovering over a link */
+a:hover{
+    color: green;
+}
+
+/* for active - when we click that link */
+a:active{
+    color: yellow;
+}
+
+/* to style focus of textfilled  */
+input:focus {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+/* 2-structured pseudo selector */
+/* :first-child */
+#container>h2:first-child{
+    color:gold
+}
+
+
+
+/* :last-child */
+#container>h2:last-child{
+    color: blue;
+}
+
+
+
+/* :nth-child() */
+#container>h2:nth-child(3){
+    color: greenyellow;
+}
+#container>h2:nth-child(4){
+    color: rgb(228, 129, 16);
+}
+/* for even digits we use : even or 2n */
+#container>h2:nth-child(2n){
+    background-color: rgb(49, 47, 47);
+}
+/* for odd digits we use : odd or 2n+1 */
+#container>h2:nth-child(2n+1){
+    background-color: rgb(16, 189, 241);
+}

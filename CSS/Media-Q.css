@@ -1,0 +1,42 @@
+section{
+    font-size: 50px;
+    text-transform: uppercase;
+    display: none;
+}
+
+@media screen and (max-width : 500px){
+    body{
+        background-color: darkblue;
+    }
+    #mobile{
+        display: block;
+    }
+}
+
+@media screen and (min-width : 501px) and (max-width : 1000px){
+    body{
+        background-color: yellow;
+    }
+    #tab{
+        display: block;
+    }
+}
+
+@media screen and (min-width : 1001px) and (max-width : 1250px){
+    body{
+        background-color: grey;
+    }
+    #lap{
+        display: block;
+    }
+}
+
+@media screen and (min-width : 1251px){
+    body{
+        background-color: red;
+    }
+    #ls{
+        display: block;
+    }
+}
+/* perform inspect in output and view in monitor icon to check vaying size  */

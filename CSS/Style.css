@@ -1,0 +1,11 @@
+/* p - propert */
+@import url('./style1.css');
+@import url('./style2.css');
+@import url('./style3.css');
+p{
+    color: red;
+}
+
+h2{
+    background-color: rgb(255, 115, 0);
+}

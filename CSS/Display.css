@@ -1,0 +1,28 @@
+section{
+    background-color: yellow;
+    /* height and width are block level elements */
+    height: 100px;
+    width: 400px;
+    /* by passing inline we dont get above tags in output */
+    display: inline;
+}
+
+span{
+    width: 100px;
+    background-color: grey;
+    /* height and width are block level elements */
+    height: 100px;
+    width: 400px;
+    /* by passing block we get above tags in output */
+    display: block;
+}
+
+div{
+    background-color: lightskyblue;
+    /* height and width are block level elements */
+    height: 100px;
+    /* by passing inline-block we get above tags in output also act as inline element */
+    display: inline-block;
+
+}
+
